@@ -1,12 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zuno - Discord Sunucu Yönetimi</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="Zuno ile Discord sunucunu kolayca yönet. Moderasyon, güvenlik, ticket ve daha fazlası.">
+  <title>Zuno — Sunucunun kontrolü sende</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>ZUNO</h1>
-  <p>Sunucunu kolayca yönet.</p>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Zuno ana sayfa"><span class="brand-mark">Z</span><span>ZUNO</span></a>
+    <nav class="nav-links">
+      <a href="#ozellikler">Özellikler</a><a href="#guvenlik">Güvenlik</a><a href="#sss">SSS</a>
+    </nav>
+    <a class="nav-cta" href="#basla">Zuno'yu keşfet <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Menüyü aç" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> DISCORD SUNUCUN İÇİN AKILLI YÖNETİM</div>
+        <h1>Sunucunun<br><span>kontrolü</span> sende.</h1>
+        <p class="hero-text">Moderasyondan güvenliğe, ticket sisteminden sunucu ayarlarına kadar ihtiyacın olan her şey tek bir yerde.</p>
+        <div class="hero-actions" id="basla">
+          <a class="button button-primary" href="#ozellikler">Özellikleri keşfet <span>→</span></a>
+          <a class="button button-quiet" href="#nasil-calisir">Nasıl çalışır?</a>
+        </div>
+        <div class="hero-note"><span class="note-check">✓</span> Kolay kurulum <span class="note-dot">·</span> Düzenli yönetim <span class="note-dot">·</span> Tek panel</div>
+      </div>
+
+      <div class="dashboard-wrap reveal" aria-label="Zuno kontrol paneli örnek tasarımı">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="dashboard-card">
+          <div class="dash-top"><div class="window-dots"><i></i><i></i><i></i></div><span> ZUNO / KONTROL MERKEZİ</span><span class="live"><b></b> CANLI</span></div>
+          <div class="dash-body">
+            <aside class="dash-side"><div class="side-logo">Z</div><div class="side-item active">▦</div><div class="side-item">♙</div><div class="side-item">♧</div><div class="side-item">⚙</div></aside>
+            <div class="dash-content">
+              <div class="dash-heading"><div><small>GENEL BAKIŞ</small><h3>Tekrar hoş geldin!</h3></div><div class="server-pill"><span></span> Benim Sunucum</div></div>
+              <div class="stats-grid">
+                <div class="stat"><span>Toplam üye</span><strong>2.481</strong><small class="positive">↗ Aktif topluluk</small></div>
+                <div class="stat"><span>Bugünkü işlemler</span><strong>128</strong><small class="positive">↗ Sistem çalışıyor</small></div>
+              </div>
+              <div class="activity">
+                <div class="activity-head"><b>Son aktiviteler</b><span>ÖRNEK GÖRÜNÜM</span></div>
+                <div class="activity-row"><i class="activity-icon green">✓</i><div><b>Güvenlik aktif</b><small>Sunucu koruması açık</small></div><em>Şimdi</em></div>
+                <div class="activity-row"><i class="activity-icon blue">⌁</i><div><b>Ticket sistemi</b><small>Destek paneli hazır</small></div><em>2 dk</em></div>
+                <div class="activity-row"><i class="activity-icon purple">⌘</i><div><b>Moderatör işlemi</b><small>İşlem kaydı oluşturuldu</small></div><em>5 dk</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="float-chip chip-one"><span class="chip-icon green">✓</span><div><b>Koruma açık</b><small>Sunucun güvende</small></div></div>
+        <div class="float-chip chip-two"><span class="chip-icon purple">⌘</span><div><b>Hepsi tek yerde</b><small>Kolay kontrol</small></div></div>
+      </div>
+      <div class="scroll-hint">AŞAĞI KAYDIR <span>↓</span></div>
+    </section>
+
+    <section class="trust-strip reveal"><span>İHTİYACIN OLAN YÖNETİM ARAÇLARI</span><div><b>MODERASYON</b><i></i><b>GÜVENLİK</b><i></i><b>TICKET</b><i></i><b>LOG</b><i></i><b>TOPLULUK</b></div></section>
+
+    <section class="features section" id="ozellikler">
+      <div class="section-heading reveal"><div class="eyebrow">DAHA DÜZENLİ BİR SUNUCU</div><h2>Sunucunun her ihtiyacı,<br><span>tek bir merkezde.</span></h2><p>Zuno, günlük sunucu yönetimini kolaylaştırmak için tasarlanıyor.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card reveal"><div class="feature-icon purple-bg">⌘</div><div class="feature-tag">YÖNETİM</div><h3>Moderasyon</h3><p>Üyeleri yönet, kuralları uygula ve moderasyon işlemlerini düzenli tut.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card reveal"><div class="feature-icon green-bg">◇</div><div class="feature-tag">KORUMA</div><h3>Güvenlik</h3><p>Sunucunu istenmeyen hareketlere karşı korumaya yardımcı araçlar.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card reveal"><div class="feature-icon blue-bg">▤</div><div class="feature-tag">DESTEK</div><h3>Ticket sistemi</h3><p>Üyelerin destek taleplerini tek bir düzenli akışta topla.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card reveal"><div class="feature-icon yellow-bg">≋</div><div class="feature-tag">TAKİP</div><h3>Kayıt ve loglar</h3><p>Sunucudaki önemli olayları takip et, işlemlerden haberdar ol.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card reveal"><div class="feature-icon blue-bg">♙</div><div class="feature-tag">TOPLULUK</div><h3>Üye deneyimi</h3><p>Karşılama, roller ve topluluk araçlarıyla daha iyi bir ortam oluştur.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card reveal"><div class="feature-icon red-bg">⚙</div><div class="feature-tag">KİŞİSELLEŞTİR</div><h3>Kolay ayarlar</h3><p>Sunucunun ihtiyaçlarına göre sistemleri yapılandır.</p><span class="card-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="security section" id="guvenlik">
+      <div class="security-panel reveal">
+        <div class="security-art"><div class="shield-ring"><div class="shield">◇</div></div><span class="spark spark-a"></span><span class="spark spark-b"></span><span class="spark spark-c"></span></div>
+        <div class="security-copy"><div class="eyebrow">DÜZEN VE KONTROL</div><h2>Yönetim daha<br><span>kolay hissettirsin.</span></h2><p>İhtiyacın olan araçları anlaşılır bir arayüzde bir araya getir. Sunucunu yönetirken karmaşayla uğraşma.</p><a href="#nasil-calisir" class="text-link">Zuno nasıl çalışır? <span>→</span></a></div>
+      </div>
+    </section>
+
+    <section class="steps section" id="nasil-calisir">
+      <div class="section-heading reveal"><div class="eyebrow">BAŞLAMAK ÇOK KOLAY</div><h2>Üç adımda <span>Zuno.</span></h2></div>
+      <div class="step-grid">
+        <div class="step reveal"><b>01</b><h3>Sunucuna ekle</h3><p>Zuno'yu Discord sunucuna davet et.</p></div>
+        <div class="step reveal"><b>02</b><h3>İzinleri ayarla</h3><p>Gerekli izinleri ve kullanacağın sistemleri seç.</p></div>
+        <div class="step reveal"><b>03</b><h3>Yönetmeye başla</h3><p>Sunucu araçlarını kullan ve ayarlarını düzenle.</p></div>
+      </div>
+    </section>
+
+    <section class="faq section" id="sss">
+      <div class="section-heading reveal"><div class="eyebrow">MERAK EDİLENLER</div><h2>Sık sorulan <span>sorular.</span></h2></div>
+      <div class="faq-list reveal">
+        <details><summary>Zuno ücretsiz mi?</summary><p>Bu web sitesi ücretsiz bir başlangıç sürümüdür. Bot özellikleri ve kullanım koşulları hazır oldukça burada açıklanacaktır.</p></details>
+        <details><summary>Zuno'yu nasıl sunucuma eklerim?</summary><p>Bot davet bağlantısı hazır olduğunda bu sayfaya eklenecek.</p></details>
+        <details><summary>Yönetim paneli şu anda kullanılabilir mi?</summary><p>Panel tasarım aşamasındadır. Discord ile güvenli giriş ve sunucu ayarları sonraki geliştirme adımlarında bağlanacaktır.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta reveal"><div class="eyebrow">ZUNO İLE TANIŞ</div><h2>Daha düzenli sunucular<br><span>burada başlar.</span></h2><p>Zuno'nun gelişimini takip et. Çok yakında daha fazlası.</p><a href="#ozellikler" class="button button-primary">Özellikleri incele <span>→</span></a></section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">Z</span><span>ZUNO</span></a><span>© 2026 Zuno. Tüm hakları saklıdır.</span><a href="#top">Yukarı dön ↑</a></footer>
+  <script src="script.js"></script>
 </body>
 </html>
