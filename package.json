@@ -1,0 +1,18 @@
+{
+  "name": "zuno-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/bot",
+    "packages/canvas"
+  ],
+  "scripts": {
+    "bot:normal": "npm --workspace apps/bot run start:normal",
+    "bot:pro": "npm --workspace apps/bot run start:pro",
+    "register": "npm --workspace apps/bot run register",
+    "assets:build": "npm --workspace packages/canvas run build-assets"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
